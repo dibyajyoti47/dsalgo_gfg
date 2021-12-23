@@ -30,6 +30,7 @@ public class CheckPrime {
     }
     public static boolean checkPrime_MoreEfficient(int num) {
         if (num == 1) return false;
+        if (num == 2 || num == 3) return true;
         if (num % 2 == 0 || num % 3 == 0) return false;
 
         for (int i=5; i*i < num; i=i+6) {
